@@ -121,7 +121,6 @@ class RegisterViewController: UIViewController {
     
     @IBAction func locationTapped(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "locationVC") as! LocationViewController
-        vc.modalPresentationStyle = .fullScreen
         vc.completionHandlerCountry = { text in self.countryTextField.text = text }
         vc.completionHandlerCity = { text in self.cityTextField.text = text }
         vc.completionHandlerZip = { text in self.zipTextField.text = text }

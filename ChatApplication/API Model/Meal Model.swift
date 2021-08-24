@@ -1,0 +1,18 @@
+//
+//  Meal Model.swift
+//  ChatApplication
+//
+//  Created by OPSolutions on 8/24/21.
+//
+
+import Foundation
+
+struct Food: Codable {
+    let  meals: Meals
+}
+
+struct Meals: Codable {
+    let  strMeal: String
+    let  strMealThumb: String
+    let  idMeal: Int
+}

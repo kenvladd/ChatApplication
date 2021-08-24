@@ -46,13 +46,6 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
         let camera = GMSCameraPosition.camera(withLatitude: coordinate.latitude, longitude: coordinate.longitude, zoom: 10.0)
         let mapView = GMSMapView.map(withFrame: view.frame, camera: camera)
         view.addSubview(mapView)
-
-
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-        marker.map = mapView
         
         let geoCoder = CLGeocoder()
         let pin = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
@@ -86,6 +79,12 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
                         
                         print("street: \(self.street ?? "n/a") city: \(self.city ?? "n/a") country: \(self.country ?? "n/a") \(self.zipCode ?? "n/a")")
                 })
+        
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude)
+        marker.title = self.city
+        marker.snippet = self.country
+        marker.map = mapView
     }
     @IBAction func confirmLocationTapped(_ sender: Any) {
         completionHandlerCountry?(country)

@@ -15,6 +15,8 @@
 		5B6D44DF26CF2FDA004C6D45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6D44DD26CF2FDA004C6D45 /* LaunchScreen.storyboard */; };
 		5B7E442C26CF790900683BA8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E442B26CF790900683BA8 /* LoginViewController.swift */; };
 		5B7E442E26CF791500683BA8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E442D26CF791500683BA8 /* RegisterViewController.swift */; };
+		5BA0DF9E26D484D000D306CD /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA0DF9D26D484D000D306CD /* PhotoCollectionViewCell.swift */; };
+		5BA0DFA226D4B2E600D306CD /* Meal Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA0DFA126D4B2E600D306CD /* Meal Model.swift */; };
 		5BF9960226D342CD00D2A131 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF9960126D342CD00D2A131 /* HomeViewController.swift */; };
 		5BF9960426D3435D00D2A131 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BF9960326D3435D00D2A131 /* GoogleService-Info.plist */; };
 		5BF9960626D3663900D2A131 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF9960526D3663900D2A131 /* LocationViewController.swift */; };
@@ -34,6 +36,8 @@
 		5B6D44E026CF2FDA004C6D45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B7E442B26CF790900683BA8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5B7E442D26CF791500683BA8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5BA0DF9D26D484D000D306CD /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		5BA0DFA126D4B2E600D306CD /* Meal Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal Model.swift"; sourceTree = "<group>"; };
 		5BF9960126D342CD00D2A131 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5BF9960326D3435D00D2A131 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5BF9960526D3663900D2A131 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 		5B6D44D126CF2FD7004C6D45 /* ChatApplication */ = {
 			isa = PBXGroup;
 			children = (
+				5BA0DFA026D4B2D100D306CD /* API Model */,
+				5BA0DF9F26D49B9900D306CD /* Networking */,
 				5B6D44E726CF3004004C6D45 /* Resources */,
 				5B6D44E626CF2FF9004C6D45 /* View Controller */,
 				5B6D44D826CF2FD7004C6D45 /* Main.storyboard */,
@@ -101,6 +107,7 @@
 				5B7E442D26CF791500683BA8 /* RegisterViewController.swift */,
 				5BF9960126D342CD00D2A131 /* HomeViewController.swift */,
 				5BF9960526D3663900D2A131 /* LocationViewController.swift */,
+				5BA0DF9D26D484D000D306CD /* PhotoCollectionViewCell.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -112,6 +119,21 @@
 				5B6D44D426CF2FD7004C6D45 /* SceneDelegate.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		5BA0DF9F26D49B9900D306CD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5BA0DFA026D4B2D100D306CD /* API Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BA0DFA126D4B2E600D306CD /* Meal Model.swift */,
+			);
+			path = "API Model";
 			sourceTree = "<group>";
 		};
 		98D60A19A19035CEE084A5B3 /* Frameworks */ = {
@@ -256,9 +278,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF9960626D3663900D2A131 /* LocationViewController.swift in Sources */,
+				5BA0DF9E26D484D000D306CD /* PhotoCollectionViewCell.swift in Sources */,
 				5B7E442C26CF790900683BA8 /* LoginViewController.swift in Sources */,
 				5B7E442E26CF791500683BA8 /* RegisterViewController.swift in Sources */,
 				5B6D44D726CF2FD7004C6D45 /* ViewController.swift in Sources */,
+				5BA0DFA226D4B2E600D306CD /* Meal Model.swift in Sources */,
 				5B6D44D326CF2FD7004C6D45 /* AppDelegate.swift in Sources */,
 				5B6D44D526CF2FD7004C6D45 /* SceneDelegate.swift in Sources */,
 				5BF9960226D342CD00D2A131 /* HomeViewController.swift in Sources */,

@@ -8,11 +8,21 @@
 import Foundation
 
 struct Food: Codable {
-    let  meals: Meals
+    let  meals: [Meals]
 }
 
 struct Meals: Codable {
     let  strMeal: String
     let  strMealThumb: String
-    let  idMeal: Int
+    let  idMeal: String
+}
+
+struct FoodCategories: Codable {
+    let  categories: [Categories]
+}
+
+struct Categories: Codable {
+    let  idCategory: String
+    let  strCategory: String
+    let  strCategoryThumb: String
 }

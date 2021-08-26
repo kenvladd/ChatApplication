@@ -11,6 +11,8 @@ import Kingfisher
 class HomeViewController: UIViewController {
     let url = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood"
     let urlCategory = "https://www.themealdb.com/api/json/v1/1/categories.php"
+    
+    var cat: String = ""
 
     var meal: [Meals] = []
     var category :[Categories] = []
@@ -30,6 +32,10 @@ class HomeViewController: UIViewController {
         
         fetchData(from: url)
         fetchDataCategory(from: urlCategory)
+    }
+    
+    func printcat() {
+        print(cat)
     }
     
     func fetchData(from url: String) {
@@ -111,8 +117,7 @@ extension HomeViewController: UICollectionViewDataSource {
         if collectionView == self.categoryCollectionView {
           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as! CategoryCollectionViewCell
             let categories = category[indexPath.row]
-            cell.categoryButton.largeContentTitle = categories.strCategory
-
+            cell.categoryLabel.text = categories.strCategory
             return cell
         }
 
@@ -128,7 +133,15 @@ extension HomeViewController: UICollectionViewDataSource {
 
 extension HomeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == self.categoryCollectionView {
+            let categories = category[indexPath.row]
+            let categoryURL = categories.strCategory
+            let url = ("https://www.themealdb.com/api/json/v1/1/filter.php?c=\(categoryURL)")
+            fetchData(from: url)
+        }
+        else{
         print(indexPath)
+        }
     }
 }
 

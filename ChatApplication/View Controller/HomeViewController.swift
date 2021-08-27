@@ -9,7 +9,7 @@ import UIKit
 import Kingfisher
 
 class HomeViewController: UIViewController {
-    let url = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood"
+    let url = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef"
     let urlCategory = "https://www.themealdb.com/api/json/v1/1/categories.php"
     
     var cat: String = ""
@@ -140,7 +140,14 @@ extension HomeViewController: UICollectionViewDelegate {
             fetchData(from: url)
         }
         else{
-        print(indexPath)
+            
+            let meals = meal[indexPath.row]
+            let vc = DetailsViewController()
+            vc.modalPresentationStyle = .automatic
+            navigationController?.pushViewController(vc, animated: false)
+            
+            
+            
         }
     }
 }

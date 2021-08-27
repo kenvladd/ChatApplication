@@ -9,6 +9,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import FirebaseFirestore
+import FirebaseDatabase
 
 class RegisterViewController: UIViewController {
     @IBOutlet weak var firstNameTextField: UITextField!

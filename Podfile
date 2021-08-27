@@ -11,6 +11,8 @@ target 'ChatApplication' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
+  pod 'Firebase/Database'
+  pod 'MessageKit'
   pod 'GoogleMaps'
 
 end

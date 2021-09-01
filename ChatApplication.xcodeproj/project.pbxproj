@@ -24,11 +24,21 @@
 		5BA0DFA226D4B2E600D306CD /* Meal Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA0DFA126D4B2E600D306CD /* Meal Model.swift */; };
 		5BC02EBA26D5D010004D3DD5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5BC02EB926D5D010004D3DD5 /* Kingfisher */; };
 		5BC02EBC26D5DEF1004D3DD5 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC02EBB26D5DEF1004D3DD5 /* CategoryCollectionViewCell.swift */; };
+		5BE669E926DF21DD0099F7C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BE669E826DF21DD0099F7C4 /* GoogleService-Info.plist */; };
+		5BE669EB26DF24AD0099F7C4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE669EA26DF24AD0099F7C4 /* MapViewController.swift */; };
 		5BEA83BD26DDD0F000325E88 /* SeeAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEA83BC26DDD0F000325E88 /* SeeAllViewController.swift */; };
 		5BEA83BF26DDD10800325E88 /* SeeAllCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEA83BE26DDD10800325E88 /* SeeAllCollectionViewCell.swift */; };
 		5BEA83C126DDF37D00325E88 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEA83C026DDF37D00325E88 /* TabBarViewController.swift */; };
+		5BEBD9FD26DF19CD00CCDD89 /* ChatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEBD9FC26DF19CD00CCDD89 /* ChatModels.swift */; };
+		5BEBDA0226DF1B7B00CCDD89 /* UICollectionView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEBDA0126DF1B7B00CCDD89 /* UICollectionView+Additions.swift */; };
+		5BEBDA0426DF1BAC00CCDD89 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEBDA0326DF1BAC00CCDD89 /* UIColor+Additions.swift */; };
+		5BEBDA0626DF1BCB00CCDD89 /* UIImage+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEBDA0526DF1BCB00CCDD89 /* UIImage+Additions.swift */; };
+		5BEBDA0826DF1BE400CCDD89 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEBDA0726DF1BE400CCDD89 /* UIView+Additions.swift */; };
+		5BF5086226DF033D006EC102 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5086126DF033D006EC102 /* AppController.swift */; };
+		5BF5086626DF0F77006EC102 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5086526DF0F77006EC102 /* AppSettings.swift */; };
+		5BF5086826DF120D006EC102 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5086726DF120D006EC102 /* Channel.swift */; };
+		5BF5086A26DF1239006EC102 /* DatabaseRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5086926DF1239006EC102 /* DatabaseRepresentation.swift */; };
 		5BF9960226D342CD00D2A131 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF9960126D342CD00D2A131 /* HomeViewController.swift */; };
-		5BF9960426D3435D00D2A131 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BF9960326D3435D00D2A131 /* GoogleService-Info.plist */; };
 		5BF9960626D3663900D2A131 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF9960526D3663900D2A131 /* LocationViewController.swift */; };
 		6467CD92D1E1CBAD8AFB5BAC /* Pods_ChatApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB120BB534BD55E8159A8922 /* Pods_ChatApplication.framework */; };
 /* End PBXBuildFile section */
@@ -54,11 +64,21 @@
 		5BA0DF9D26D484D000D306CD /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		5BA0DFA126D4B2E600D306CD /* Meal Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal Model.swift"; sourceTree = "<group>"; };
 		5BC02EBB26D5DEF1004D3DD5 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		5BE669E826DF21DD0099F7C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5BE669EA26DF24AD0099F7C4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5BEA83BC26DDD0F000325E88 /* SeeAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllViewController.swift; sourceTree = "<group>"; };
 		5BEA83BE26DDD10800325E88 /* SeeAllCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllCollectionViewCell.swift; sourceTree = "<group>"; };
 		5BEA83C026DDF37D00325E88 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		5BEBD9FC26DF19CD00CCDD89 /* ChatModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModels.swift; sourceTree = "<group>"; };
+		5BEBDA0126DF1B7B00CCDD89 /* UICollectionView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Additions.swift"; sourceTree = "<group>"; };
+		5BEBDA0326DF1BAC00CCDD89 /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		5BEBDA0526DF1BCB00CCDD89 /* UIImage+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Additions.swift"; sourceTree = "<group>"; };
+		5BEBDA0726DF1BE400CCDD89 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
+		5BF5086126DF033D006EC102 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		5BF5086526DF0F77006EC102 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppSettings.swift; path = /Users/opsolutions/Desktop/XcodeProjects/ChatApplication/ChatApplication/Resources/AppSettings.swift; sourceTree = "<absolute>"; };
+		5BF5086726DF120D006EC102 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		5BF5086926DF1239006EC102 /* DatabaseRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseRepresentation.swift; sourceTree = "<group>"; };
 		5BF9960126D342CD00D2A131 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		5BF9960326D3435D00D2A131 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5BF9960526D3663900D2A131 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		CB120BB534BD55E8159A8922 /* Pods_ChatApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,8 +136,9 @@
 		5B6D44D126CF2FD7004C6D45 /* ChatApplication */ = {
 			isa = PBXGroup;
 			children = (
+				5BEBDA0026DF1B5B00CCDD89 /* Extensions */,
 				5B6D44E026CF2FDA004C6D45 /* Info.plist */,
-				5BF9960326D3435D00D2A131 /* GoogleService-Info.plist */,
+				5BE669E826DF21DD0099F7C4 /* GoogleService-Info.plist */,
 				5B2AC04826D85F510002D254 /* Views */,
 				5BA0DFA026D4B2D100D306CD /* API Model */,
 				5BA0DF9F26D49B9900D306CD /* Networking */,
@@ -145,6 +166,7 @@
 				5BEA83BC26DDD0F000325E88 /* SeeAllViewController.swift */,
 				5BEA83BE26DDD10800325E88 /* SeeAllCollectionViewCell.swift */,
 				5BEA83C026DDF37D00325E88 /* TabBarViewController.swift */,
+				5BE669EA26DF24AD0099F7C4 /* MapViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -152,8 +174,12 @@
 		5B6D44E726CF3004004C6D45 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5BF5086526DF0F77006EC102 /* AppSettings.swift */,
 				5B6D44D226CF2FD7004C6D45 /* AppDelegate.swift */,
 				5B6D44D426CF2FD7004C6D45 /* SceneDelegate.swift */,
+				5BF5086126DF033D006EC102 /* AppController.swift */,
+				5BF5086726DF120D006EC102 /* Channel.swift */,
+				5BF5086926DF1239006EC102 /* DatabaseRepresentation.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -169,8 +195,20 @@
 			isa = PBXGroup;
 			children = (
 				5BA0DFA126D4B2E600D306CD /* Meal Model.swift */,
+				5BEBD9FC26DF19CD00CCDD89 /* ChatModels.swift */,
 			);
 			path = "API Model";
+			sourceTree = "<group>";
+		};
+		5BEBDA0026DF1B5B00CCDD89 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5BEBDA0126DF1B7B00CCDD89 /* UICollectionView+Additions.swift */,
+				5BEBDA0326DF1BAC00CCDD89 /* UIColor+Additions.swift */,
+				5BEBDA0526DF1BCB00CCDD89 /* UIImage+Additions.swift */,
+				5BEBDA0726DF1BE400CCDD89 /* UIView+Additions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		98D60A19A19035CEE084A5B3 /* Frameworks */ = {
@@ -248,9 +286,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B6D44DF26CF2FDA004C6D45 /* LaunchScreen.storyboard in Resources */,
-				5BF9960426D3435D00D2A131 /* GoogleService-Info.plist in Resources */,
 				5B6D44DC26CF2FDA004C6D45 /* Assets.xcassets in Resources */,
 				5B6D44DA26CF2FD7004C6D45 /* Main.storyboard in Resources */,
+				5BE669E926DF21DD0099F7C4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,21 +361,31 @@
 				5BF9960626D3663900D2A131 /* LocationViewController.swift in Sources */,
 				5BA0DF9E26D484D000D306CD /* PhotoCollectionViewCell.swift in Sources */,
 				5B7E442C26CF790900683BA8 /* LoginViewController.swift in Sources */,
+				5BEBD9FD26DF19CD00CCDD89 /* ChatModels.swift in Sources */,
 				5B7E442E26CF791500683BA8 /* RegisterViewController.swift in Sources */,
 				5BEA83C126DDF37D00325E88 /* TabBarViewController.swift in Sources */,
+				5BEBDA0426DF1BAC00CCDD89 /* UIColor+Additions.swift in Sources */,
 				5B6D44D726CF2FD7004C6D45 /* ViewController.swift in Sources */,
 				5BEA83BF26DDD10800325E88 /* SeeAllCollectionViewCell.swift in Sources */,
+				5BEBDA0826DF1BE400CCDD89 /* UIView+Additions.swift in Sources */,
+				5BF5086A26DF1239006EC102 /* DatabaseRepresentation.swift in Sources */,
+				5BF5086826DF120D006EC102 /* Channel.swift in Sources */,
 				5BA0DFA226D4B2E600D306CD /* Meal Model.swift in Sources */,
 				5B2AC04D26D862320002D254 /* NewConversationViewController.swift in Sources */,
+				5BF5086226DF033D006EC102 /* AppController.swift in Sources */,
 				5BC02EBC26D5DEF1004D3DD5 /* CategoryCollectionViewCell.swift in Sources */,
 				5B6D44D326CF2FD7004C6D45 /* AppDelegate.swift in Sources */,
 				5B6D44D526CF2FD7004C6D45 /* SceneDelegate.swift in Sources */,
+				5BEBDA0626DF1BCB00CCDD89 /* UIImage+Additions.swift in Sources */,
 				5BEA83BD26DDD0F000325E88 /* SeeAllViewController.swift in Sources */,
 				5B2AC05126D881E50002D254 /* ChatViewController.swift in Sources */,
 				5B2AC04F26D862520002D254 /* ProfileViewController.swift in Sources */,
 				5B2AC04B26D861550002D254 /* ConversationViewController.swift in Sources */,
+				5BEBDA0226DF1B7B00CCDD89 /* UICollectionView+Additions.swift in Sources */,
 				5BF9960226D342CD00D2A131 /* HomeViewController.swift in Sources */,
+				5BF5086626DF0F77006EC102 /* AppSettings.swift in Sources */,
 				5B17DDCD26D8B4D500EBBDD0 /* DetailsViewController.swift in Sources */,
+				5BE669EB26DF24AD0099F7C4 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/opsolutions/Desktop/XcodeProjects/ChatApplication/ChatApplication/Resources/AppSettings.swift">
+   </FileRef>
+   <FileRef
       location = "group:ChatApplication.xcodeproj">
    </FileRef>
    <FileRef

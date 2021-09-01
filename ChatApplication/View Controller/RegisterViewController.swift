@@ -32,10 +32,10 @@ class RegisterViewController: UIViewController {
     }
     
     func transitionToHome() {
-        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as! HomeViewController
+        let homeViewController = self.storyboard?.instantiateViewController(identifier: "HomeTab") as! TabBarViewController
         
-        view.window?.rootViewController = homeViewController
-        view.window?.makeKeyAndVisible()
+        self.view.window?.rootViewController = homeViewController
+        self.view.window?.makeKeyAndVisible()
     }
     
     func validateField() -> String? {

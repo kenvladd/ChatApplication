@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
     var cat: String = ""
 
     var meal: [Meals] = []
+    private var meals = [Meals]()
     var category :[Categories] = []
 
     @IBOutlet weak var collectionView: UICollectionView!
@@ -33,10 +34,7 @@ class HomeViewController: UIViewController {
         fetchData(from: url)
         fetchDataCategory(from: urlCategory)
     }
-    
-    func printcat() {
-        print(cat)
-    }
+
     
     func fetchData(from url: String) {
         
@@ -100,6 +98,28 @@ class HomeViewController: UIViewController {
         task.resume()
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "toDetails" else {
+            return
+        }
+        let detailsVC = segue.destination as! DetailsViewController
+        guard let selectedIndexPaths = collectionView.indexPathsForSelectedItems,
+        let selectedIndexPath = selectedIndexPaths.first else {
+      return
+  }
+        
+        let meals = meal[selectedIndexPath.row]
+        detailsVC.url = meals.strMealThumb
+        detailsVC.names = meals.strMeal
+        detailsVC.id = meals.idMeal
+    }
+    @IBAction func seeAllTapped(_ sender: Any) {
+//        let vc = storyboard?.instantiateViewController(identifier: "seeAllVC") as! SeeAllViewController
+//        vc.completionHandler = { text in categoryURL  }
+//        let url = ("https://www.themealdb.com/api/json/v1/1/filter.php?c=\(categoryURL)")
+//        fetchData(from: url)
+    }
 }
 
 
@@ -118,6 +138,12 @@ extension HomeViewController: UICollectionViewDataSource {
           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as! CategoryCollectionViewCell
             let categories = category[indexPath.row]
             cell.categoryLabel.text = categories.strCategory
+            cell.contentView.layer.cornerRadius = 5.0
+//            let bgview = cell.contentView
+//            bgview.backgroundColor = .green
+//            cell.selectedBackgroundView = bgview
+            cell.contentView.backgroundColor = UIColor.white
+
             return cell
         }
 
@@ -126,9 +152,12 @@ extension HomeViewController: UICollectionViewDataSource {
         let url = URL(string: meals.strMealThumb)
         cell.imageView.kf.setImage(with: url)
         cell.foodlabel.text = meals.strMeal
+        cell.contentView.layer.cornerRadius = 8.0
+        cell.share.layer.cornerRadius = 5
 
         return cell
     }
+    
 }
 
 extension HomeViewController: UICollectionViewDelegate {
@@ -142,11 +171,6 @@ extension HomeViewController: UICollectionViewDelegate {
         else{
             
             let meals = meal[indexPath.row]
-            let vc = DetailsViewController()
-            vc.modalPresentationStyle = .automatic
-            navigationController?.pushViewController(vc, animated: false)
-            
-            
             
         }
     }
@@ -156,6 +180,11 @@ let screenSize = UIScreen.main.bounds
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: screenSize.size.width/2, height: 200)
+        if collectionView == self.categoryCollectionView {
+            return CGSize(width: 114, height: 55)
+        }
+        
+        return CGSize(width: 182, height: 272)
     }
 }
+

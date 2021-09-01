@@ -2,21 +2,24 @@
 //  SeeAllViewController.swift
 //  ChatApplication
 //
-//  Created by OPSolutions on 8/27/21.
+//  Created by OPSolutions on 8/31/21.
 //
 
 import UIKit
+import Kingfisher
 
-class SeeAllViewController: ViewController {
+class SeeAllViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    let urlCategory = "https://www.themealdb.com/api/json/v1/1/categories.php"
     var category :[Categories] = []
+    let urlCategory = "https://www.themealdb.com/api/json/v1/1/categories.php"
+    var completionHandler: ((String?) -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        collectionView.dataSource = self
+
         collectionView.delegate = self
+        collectionView.dataSource = self
+        
         fetchDataCategory(from: urlCategory)
     }
     
@@ -50,18 +53,38 @@ class SeeAllViewController: ViewController {
         task.resume()
         
     }
+
 }
 
-extension SeeAllViewController:  UICollectionViewDataSource {
-func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 1
-}
-
-func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    return UICollectionViewCell()
-}
+extension SeeAllViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return category.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SeeAllCollectionViewCell
+        let categories = category[indexPath.row]
+        let url = URL(string: categories.strCategoryThumb)
+        cell.imageView.kf.setImage(with: url)
+        cell.titleLabel.text = categories.strCategory
+        cell.contentView.layer.cornerRadius = 8.0
+        return cell
+    }
 }
 
 extension SeeAllViewController: UICollectionViewDelegate {
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let categories = category[indexPath.row]
+        let categoryURL = categories.strCategory
+        completionHandler?(categoryURL)
+        dismiss(animated: true, completion: nil)
+    }
+}
+
+extension SeeAllViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        return CGSize(width: 183, height: 215)
+    }
 }

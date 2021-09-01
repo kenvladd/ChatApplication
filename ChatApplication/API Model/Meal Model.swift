@@ -26,3 +26,4 @@ struct Categories: Codable {
     let  strCategory: String
     let  strCategoryThumb: String
 }
+
